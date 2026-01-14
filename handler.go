@@ -6,7 +6,7 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-const indexPage = "index.html"
+const indexPage = "200.html"
 
 func AssetsHandler() (echo.HandlerFunc, error) {
 	fs, err := Assets()

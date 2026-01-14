@@ -3,8 +3,3 @@
 build/
 tmp/
 local/
-!dist/local
-
-# goreleaser
-dist/
-

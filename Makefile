@@ -1,7 +1,8 @@
 build-assets:
 	(cd ui && pnpm i)
 	(cd ui && pnpm svelte-kit sync)
-	(cd ui && BUILD_PATH=../assets pnpm build:server)
+	(cd ui && BUILD_PATH=../dist/local VITE_API_ADDRESS= VITE_BUILD_TARGET=local pnpm build)
+	(cd ui && BUILD_PATH=../dist/cloud VITE_API_ADDRESS= VITE_BUILD_TARGET=cloud pnpm build)
 
 update-submodules:
 	@git submodule foreach --recursive '\

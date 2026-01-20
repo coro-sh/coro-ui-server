@@ -9,7 +9,7 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-const indexPage = "200.html"
+const indexPage = "index.html"
 
 //go:embed all:dist
 var dist embed.FS
